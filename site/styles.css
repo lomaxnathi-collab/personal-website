@@ -40,3 +40,14 @@ a { color: var(--accent); text-underline-offset: 3px; }
 .cards li { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.1rem 1.2rem; }
 .cards p { margin: 0; color: var(--muted); }
 footer { border-top: 1px solid var(--border); padding-top: 1.5rem; color: var(--muted); font-size: .9rem; }
+.sub { font-size: .88rem; margin: 0 0 .5rem !important; }
+.timeline { list-style: none; padding: 0; margin: 0; }
+.timeline > li { padding: 0 0 1.75rem 1.25rem; border-left: 2px solid var(--border); position: relative; }
+.timeline > li::before { content: ""; position: absolute; left: -6px; top: .5rem; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+.timeline > li:last-child { padding-bottom: 0; }
+.role { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0 1rem; align-items: baseline; }
+.when { color: var(--muted); font-size: .88rem; white-space: nowrap; }
+.timeline p, .timeline ul { margin: .4rem 0 0; }
+.timeline ul { padding-left: 1.1rem; color: var(--muted); }
+.tags { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.tags li { border: 1px solid var(--border); background: var(--card); border-radius: 999px; padding: .3rem .8rem; font-size: .9rem; }
