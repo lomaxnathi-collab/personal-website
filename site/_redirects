@@ -1,0 +1,2 @@
+# Send www to the bare domain
+https://www.nathilomax.com/* https://nathilomax.com/:splat 301
