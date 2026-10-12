@@ -59,7 +59,7 @@ p { margin: 0 0 1rem; }
 .wrap { max-width: 60rem; margin: 0 auto; padding: 0 1rem 3rem; }
 
 /* Masthead */
-.masthead { padding: 4rem 0 3rem; border-bottom: 3px double var(--rule); }
+.masthead { padding: 4rem 0 3rem; border-bottom: 3px double var(--rule); margin-bottom: 3.5rem; }
 .dateline { font: 500 .78rem/1.4 var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
 h1 { font-size: clamp(3rem, 11vw, 6.5rem); line-height: .95; margin: .5rem 0 .75rem; letter-spacing: -0.03em; }
 .greeting { font-family: var(--serif); font-style: italic; font-size: 1.35rem; color: var(--accent); }
@@ -73,22 +73,6 @@ h1 { font-size: clamp(3rem, 11vw, 6.5rem); line-height: .95; margin: .5rem 0 .75
   padding: .65rem 1.2rem; border-radius: 999px;
 }
 .btn:hover { background: var(--accent); text-decoration: none !important; }
-
-/* Stats */
-.stats {
-  display: grid; grid-template-columns: repeat(4, 1fr);
-  border-bottom: 1px solid var(--rule);
-  margin-bottom: 3.5rem;
-}
-.stats div { padding: 1.75rem 1rem 1.75rem 0; }
-.stats div + div { border-left: 1px solid var(--rule); padding-left: 1.25rem; }
-.num { display: block; font: 500 clamp(2rem, 5vw, 2.8rem)/1 var(--serif); margin-bottom: .4rem; }
-.label { font-size: .85rem; color: var(--muted); line-height: 1.35; display: block; }
-@media (max-width: 640px) {
-  .stats { grid-template-columns: 1fr 1fr; }
-  .stats div:nth-child(3) { border-left: 0; padding-left: 0; }
-  .stats div:nth-child(n+3) { border-top: 1px solid var(--rule); }
-}
 
 /* Sections */
 section { margin-bottom: 4rem; }
