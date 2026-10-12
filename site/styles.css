@@ -92,3 +92,41 @@ footer h2 { font-size: clamp(2rem, 6vw, 3rem); margin: 0 0 .5rem; }
 footer > p { max-width: 36rem; color: var(--muted); }
 footer .links { margin: 1.5rem 0 3rem; }
 .fine { font-size: .85rem; color: var(--muted); }
+
+/* Logos */
+.logo-chip { display: inline-flex; align-items: center; justify-content: center; background: #fff; border: 1px solid var(--rule); border-radius: 10px; height: 3rem; padding: .5rem .9rem; }
+.logo-chip img { height: 100%; width: auto; max-width: 8rem; display: block; }
+.logo-chip.lg { height: 4.5rem; min-width: 7rem; padding: .8rem 1.1rem; flex-shrink: 0; }
+.logo-chip.lg img { max-width: 11rem; }
+
+/* Simulations link card (home) */
+.sim-link {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.25rem 2rem;
+  background: var(--paper); border: 1px solid var(--rule); border-left: 4px solid var(--accent);
+  padding: 1.5rem; margin-bottom: 1rem; color: inherit; text-decoration: none;
+  transition: border-color .15s, transform .15s;
+}
+.sim-link:hover { border-color: var(--accent); transform: translateY(-2px); }
+.sim-link > div:first-child { flex: 1 1 20rem; }
+.sim-link p:not(.card-tag) { color: var(--muted); font-size: .95rem; margin-bottom: .75rem; }
+.more { font-weight: 600; color: var(--accent); }
+.logo-row { display: flex; flex-wrap: wrap; gap: .5rem; }
+
+/* Simulations page */
+.crumbs { padding-top: 1.5rem; font-weight: 600; }
+.crumbs a { text-decoration: none; }
+.page-title { font-size: clamp(2.8rem, 9vw, 5rem); }
+.sim { background: var(--paper); border: 1px solid var(--rule); border-top: 4px solid var(--accent); padding: 2rem clamp(1rem, 4vw, 2.5rem); margin-bottom: 2.5rem; }
+.sim-head { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem 1.5rem; padding-bottom: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--rule); }
+.sim-head h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 0 0 .3rem; }
+.sim-head .kicker { margin-bottom: .5rem; }
+.meta-line { color: var(--muted); font-size: .9rem; margin: 0; }
+.sim-body { display: grid; grid-template-columns: 1fr 15rem; gap: 2rem; }
+@media (max-width: 720px) { .sim-body { grid-template-columns: 1fr; } }
+.sim-body h3 { margin-top: 0; }
+.sim-body h3 + p { margin-bottom: 1.75rem; }
+.steps { padding-left: 1.2rem; margin: 0; }
+.steps li { margin-bottom: .8rem; }
+.steps li::marker { font-family: var(--serif); color: var(--accent); }
+.forage { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem 1.5rem; color: var(--muted); }
+.forage p { flex: 1 1 20rem; margin: 0; }
