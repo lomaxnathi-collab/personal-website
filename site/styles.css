@@ -91,3 +91,5 @@ footer { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--rul
 /* Writing */
 .piece .meta { margin-bottom: 2.5rem; }
 .piece p:not(.meta) { margin-bottom: 1.5rem; }
+.piece .break { text-align: center; color: var(--muted); letter-spacing: .5em; margin: 2.25rem 0; }
+[lang="th"] { font-family: "Sarabun", var(--serif); font-weight: 300; }
