@@ -87,3 +87,7 @@ h1 { font-size: 2.2rem; font-weight: 500; line-height: 1.15; letter-spacing: -0.
 
 /* Footer */
 footer { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); font: 400 .8rem/1.5 var(--sans); color: var(--muted); }
+
+/* Writing */
+.piece .meta { margin-bottom: 2.5rem; }
+.piece p:not(.meta) { margin-bottom: 1.5rem; }
