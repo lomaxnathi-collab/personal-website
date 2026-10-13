@@ -104,6 +104,14 @@ h1 { font-size: 2.2rem; font-weight: 500; line-height: 1.15; letter-spacing: -0.
 .forage { display: flex; gap: 1rem; align-items: flex-start; }
 .forage img { height: 1.4rem; width: auto; flex-shrink: 0; margin-top: .25rem; filter: var(--logo-filter); mix-blend-mode: var(--logo-blend); opacity: .8; }
 
+/* Resume button */
+.resume { margin: 3rem 0 0; }
+.btn {
+  display: inline-block; padding: .6rem 1.2rem; border: 1px solid var(--fg); border-radius: 999px;
+  font: 500 .85rem/1 var(--sans); text-decoration: none; transition: background-color .15s, color .15s;
+}
+.btn:hover { background: var(--fg); color: var(--bg); }
+
 /* Footer */
 footer { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); font: 400 .8rem/1.5 var(--sans); color: var(--muted); }
 
