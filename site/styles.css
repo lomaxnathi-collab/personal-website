@@ -1,3 +1,7 @@
+@font-face { font-family: "Schola"; src: local("Century Schoolbook"), local("CenturySchoolbook"), url("/fonts/texgyreschola-regular.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Schola"; src: local("Century Schoolbook Italic"), local("CenturySchoolbook-Italic"), url("/fonts/texgyreschola-italic.otf") format("opentype"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Schola"; src: local("Century Schoolbook Bold"), local("CenturySchoolbook-Bold"), url("/fonts/texgyreschola-bold.otf") format("opentype"); font-weight: 700; font-style: normal; font-display: swap; }
+
 :root {
   --cambridge: #a3c1ad;
   --bg: #a3c1ad;
@@ -9,8 +13,8 @@
   --dot: #16201a;
   --logo-filter: grayscale(1) brightness(.3);
   --logo-blend: multiply;
-  --serif: "Newsreader", Georgia, "Times New Roman", serif;
-  --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Schola", "Century Schoolbook", "New Century Schoolbook", Georgia, serif;
+  --sans: var(--serif);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -43,7 +47,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font: 400 1.18rem/1.65 var(--serif);
+  font: 400 1.06rem/1.7 var(--serif);
 }
 ::selection { background: var(--fg); color: var(--bg); }
 
@@ -63,10 +67,10 @@ p { margin: 0 0 1.1rem; }
 
 /* Header */
 .top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .5rem 1.5rem; margin-bottom: 3rem; }
-.name { font-size: 1.6rem; font-weight: 500; margin: 0; letter-spacing: -0.01em; }
+.name { font-size: 1.6rem; font-weight: 400; margin: 0; letter-spacing: -0.01em; }
 .name a { text-decoration: none; }
 .name::after { content: ""; display: inline-block; width: .42em; height: .42em; border-radius: 50%; background: var(--dot); margin-left: .3em; vertical-align: .08em; }
-.top nav { display: flex; align-items: center; gap: 1.25rem; font: 500 .85rem/1 var(--sans); }
+.top nav { display: flex; align-items: center; gap: 1.25rem; font: 400 .85rem/1 var(--sans); }
 .theme-toggle {
   width: 1.05rem; height: 1.05rem; padding: 0; border: 1.5px solid var(--fg); border-radius: 50%; cursor: pointer;
   background: linear-gradient(90deg, var(--fg) 50%, transparent 50%);
@@ -77,7 +81,7 @@ p { margin: 0 0 1.1rem; }
 
 /* Lists */
 h2 {
-  font: 500 .72rem/1 var(--sans);
+  font: 400 .72rem/1 var(--sans);
   text-transform: uppercase;
   letter-spacing: .14em;
   color: var(--muted);
@@ -90,12 +94,12 @@ h2 {
 .list .note { color: var(--muted); }
 
 /* Simulations page */
-h1 { font-size: 2.2rem; font-weight: 500; line-height: 1.15; letter-spacing: -0.015em; margin: 0 0 1rem; }
+h1 { font-size: 2.2rem; font-weight: 400; line-height: 1.15; letter-spacing: -0.015em; margin: 0 0 1rem; }
 .lede { color: var(--muted); }
 .sim { padding-top: 2.5rem; margin-top: 2.5rem; border-top: 1px solid var(--rule); }
 .sim-logo { height: 1.6rem; width: auto; display: block; margin-bottom: 1.25rem; filter: var(--logo-filter); mix-blend-mode: var(--logo-blend); opacity: .8; }
 .sim-logo.tall { height: 2.2rem; }
-.sim h3 { font-size: 1.45rem; font-weight: 500; margin: 0 0 .2rem; }
+.sim h3 { font-size: 1.45rem; font-weight: 400; margin: 0 0 .2rem; }
 .meta { font: 400 .85rem/1.5 var(--sans); color: var(--muted); margin-bottom: 1.25rem; }
 .steps { padding-left: 1.2rem; margin: 0 0 1.1rem; }
 .steps li { margin-bottom: .5rem; padding-left: .2rem; }
