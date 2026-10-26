@@ -120,3 +120,7 @@ footer { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--rul
 .piece p:not(.meta) { margin-bottom: 1.5rem; }
 .piece .break { text-align: center; color: var(--muted); letter-spacing: .5em; margin: 2.25rem 0; }
 [lang="th"] { font-family: "Sarabun", var(--serif); font-weight: 300; }
+.piece h2 { font: 500 1.3rem/1.35 var(--serif); text-transform: none; letter-spacing: -0.005em; color: var(--fg); margin: 3rem 0 1.1rem; }
+.cite-note { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); font: 400 .85rem/1.6 var(--sans); color: var(--muted); }
+.cite-note h2 { font: 500 .72rem/1 var(--sans); text-transform: uppercase; letter-spacing: .14em; color: var(--muted); margin: 0 0 .75rem; }
+.piece .cite-note p { margin: 0; }
