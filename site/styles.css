@@ -125,7 +125,8 @@ footer { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--rul
 .cite-note h2 { font: 500 .72rem/1 var(--sans); text-transform: uppercase; letter-spacing: .14em; color: var(--muted); margin: 0 0 .75rem; }
 .piece .cite-note p { margin: 0; }
 .epilogue { margin: 3.5rem 0 0; display: grid; gap: 2rem; }
-.epilogue blockquote { margin: 0; padding-left: 1.25rem; border-left: 2px solid var(--line); }
-.piece .epilogue p { font-style: italic; margin: 0 0 .5rem; }
-.epilogue footer { margin: 0; padding: 0; border: 0; font: 400 .85rem/1.5 var(--sans); color: var(--muted); }
-.epilogue cite { font-style: italic; }
+.epigraph { margin: 0 0 2.75rem; }
+.epilogue blockquote, .epigraph blockquote { margin: 0; padding-left: 1.25rem; border-left: 2px solid var(--line); }
+.piece .epilogue p, .piece .epigraph p { font-style: italic; margin: 0 0 .5rem; }
+.epilogue footer, .epigraph footer { margin: 0; padding: 0; border: 0; font: 400 .85rem/1.5 var(--sans); color: var(--muted); }
+.epilogue cite, .epigraph cite { font-style: italic; }
